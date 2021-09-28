@@ -1,0 +1,23 @@
+
+Git下载
+安装包下载地址：https://gitforwindows.org/
+官网慢，可以用国内的镜像：https://npm.taobao.org/mirrors/git-for-windows/
+
+下载后打开bash
+输入 git --version 看是否有输出版本
+
+
+全局设置名称和邮箱：
+git config --global user.name "yangpeihao"
+git config --global user.email "466146588@qq.com"
+
+
+如果针对某个项目设置的话，去掉global即可
+git config  user.name "yangpeihao"
+git config  user.email "466146588@qq.com"
+
+查看当前项目配置
+git config --list
+
+查看全局配置
+$ git config --global --list
