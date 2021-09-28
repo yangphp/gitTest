@@ -1,0 +1,24 @@
+
+版本恢复
+
+恢复到上个版本
+git reset --hard HEAD^ 
+
+恢复到上上个版本
+git reset --hard HEAD^^
+
+恢复到前100个版本
+git reset --hard HEAD~100
+
+恢复到某个版本
+git reset --hard 473fb15dcda 
+
+
+通过git log 查看当前的版本
+git log 
+
+通过git reflog 可以看到每一个提交到版本库的命令
+git reflog 
+
+通过 --pretty=oneline查看简介的日志
+git log --pretty=oneline
