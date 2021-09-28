@@ -5,10 +5,23 @@
 git status 
 
 
-比较文件的不同，即暂存区和工作区的差异
+查看暂存区和工作区的差异
+git diff 
+
+查看某个文件暂存区和工作区的差异
 git diff filename
 
 查看暂存区和最后一次提交的差异
+git diff --cached 
+
+查看某个文件暂存区和最后一次提交的差异
 git diff --cached filename
 
+通过git log 查看当前的版本
+git log 
 
+通过 --pretty=oneline查看简介的日志
+git log --pretty=oneline
+
+通过git reflog 可以看到每一个提交到版本库的命令
+git reflog 
