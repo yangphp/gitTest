@@ -5,3 +5,8 @@ git add . 		  #添加当前目录下所有文件到暂存区
 
 提交暂存区内容到版本库
 git commit -m ' commit msg'
+
+
+取消工作区的修改(未提交到暂存区或版本库)
+
+git checkout -- filename 
