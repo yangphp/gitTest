@@ -5,5 +5,5 @@
 git status 
 
 比较文件的不同，即暂存区和工作区的差异
-git diff
+git diff filename
 
