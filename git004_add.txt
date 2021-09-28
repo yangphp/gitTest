@@ -1,0 +1,7 @@
+
+添加工作区文件到暂存区
+git add filename  #添加filename文件到暂存区
+git add . 		  #添加当前目录下所有文件到暂存区
+
+提交暂存区内容到版本库
+git commit -m ' commit msg'
