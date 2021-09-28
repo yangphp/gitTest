@@ -9,5 +9,10 @@ git commit -m ' commit msg'
 
 取消工作区的修改(未提交到暂存区或版本库)
 git checkout -- filename 
-git checkout -- filename 命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+注意：git checkout -- filename 命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+
+取消暂存区的修改（已提交到暂存区，未提交到版本库）
+git reset HEAD filename 
+注意：取消暂存区的修改后，修改的内容仍然存在工作区，并不会消失，如果要取消工作区的修改，再执行
+git checkout -- filename 
 
