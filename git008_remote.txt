@@ -1,0 +1,20 @@
+
+创建远程仓库
+
+登录github，创建一个仓库
+地址为：git@github.com:yangphp/gitTest.git
+
+本地关联远程仓库
+git remote add origin git@github.com:yangphp/gitTest.git
+
+首次本地库的所有内容推送到远程库上
+git push -u origin master
+加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+
+本地库的所有内容推送到远程库上
+git push origin master
+
+
+删除远程库
+git remote -v #查看远程库
+git remote rm origin #删除远程库和本地库的连接 
