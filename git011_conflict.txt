@@ -1,5 +1,12 @@
 
 冲突解决：
 
+1、先创建分支 devuser01
+git checkout -b devuser01 
+
+2、修改分支上面 git011的内容
+3、提交分支内容
+git add git011_conflict.txt
+git commit -m 'change git011 content'
 
 
