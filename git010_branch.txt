@@ -26,6 +26,15 @@ git merge devuser01		#将devuser01分支内容合并过来
 合并后没问题就可以删除分支
 git branch -d devuser01
 
+推送分支内容到远程仓库
+git push origin master 		#推送主分支
+git push origin devuser01 	#推送分支devuser01
+
+删除远程分支
+git branch -a #查看所有分支
+git checkout master #将分支切换到master上面
+git push origin --delete devuser01 #删除远程分支devuser01
+
 
 
 
