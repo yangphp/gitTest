@@ -2,6 +2,8 @@
 远程仓库地址为：
 git@github.com:yangphp/gitTest.git
 
+克隆远程仓库内容
+git clone git@github.com:yangphp/gitTest.git
 
 需要注意
 GitHub给出的地址不止一个，还可以用https://github.com/ 这样的地址
