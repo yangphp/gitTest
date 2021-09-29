@@ -22,6 +22,7 @@ git commit -m 'devuser01 change git010'  #提交
 git checkout master 	#切换回master
 git merge devuser01		#将devuser01分支内容合并过来
 
+
 合并后没问题就可以删除分支
 git branch -d devuser01
 

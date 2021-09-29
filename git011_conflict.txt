@@ -21,6 +21,18 @@ git merge devuser01  #可以看到提示git011_conflict.txt 冲突了
 git add git011_conflict.txt
 git commit -m 'solve conflict'
 
+5、查看分支合并情况
+git log --graph --pretty=oneline --abbrev-commit
+
+6、删除子分支 devuser01
+git branch -d devuser01
+
+
+如果子分支不小心提交到了github上面，则通过以下方式删除
+git branch -a #查看所有分支
+git checkout master #将分支切换到master上面
+git push origin --delete devuser01 #删除远程分支devuser01
+
 
 
 

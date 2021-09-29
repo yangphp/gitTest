@@ -23,5 +23,10 @@ git log
 通过 --pretty=oneline查看简介的日志
 git log --pretty=oneline
 
+
+查看分支合并情况
+git log --graph --pretty=oneline --abbrev-commit
+
+
 通过git reflog 可以看到每一个提交到版本库的命令
 git reflog 
