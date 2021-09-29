@@ -1,3 +1,31 @@
 
 分支管理：
 
+创建并切换分支
+git checkout -b devuser01  #命令加上-b参数表示创建并切换
+
+创建分支
+git branch devuser01
+
+切换分支
+git checkout devuser01
+
+查看分支
+git branch
+
+
+在分支devuser01上面做修改后
+
+git add git010_branch.txt  #添加 
+git commit -m 'devuser01 change git010'  #提交
+
+git checkout master 	#切换回master
+git merge devuser01		#将devuser01分支内容合并过来
+
+合并后没问题就可以删除分支
+git branch -d devuser01
+
+
+
+
+
