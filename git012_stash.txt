@@ -1,0 +1,63 @@
+
+bug分支处理：
+开发过程中经常会遇到bug需要解决。有bug就需要修复！
+
+1、隐藏当前的工作现场
+
+git stash 
+
+命令会把以下修改存储到一个新的堆栈中。堆栈中的内容（stash）可以被所有分支访问。
+暂存区中的修改
+工作区中已经存在的文件的修改
+也就是说，默认情况下，git stash 命令不会存储下列文件。
+
+工作区中新增的文件（untracked files）
+被版本库忽略的文件（.gitignore 中定义的）
+如果你还想要存储 untracked files，可以使用 -u 选项。
+
+git stash -u
+
+git stash 时，需要添加一个 message 注解，可以使用 save 选项。
+
+git stash save "备注信息"
+
+
+git stash 的常用命令
+
+存储到堆栈
+git stash save -u "备注信息"
+
+
+查看堆栈中的 stash 列表
+# 堆栈中可能会有多个 stash，通过 stash_id 进行区分
+git stash list
+
+查看 stash 的内容
+git stash show
+git stash show stash@{id}
+git stash show -p
+
+将堆栈中的 stash 应用到工作区
+
+# 将堆栈中的指定 stash 应用到工作区（保留堆栈的内容）
+git stash apply stash@{id} 
+
+# 将堆栈中的最近一次 stash，应用到工作区（保留堆栈的内容）
+git stash apply
+
+# 等价于上面的一条命令
+git stash apply stash@{0}
+
+# 将堆栈中的最近一次 stash，应用到工作区（删除堆栈的内容）
+git stash pop
+
+# 删除指定的 stash
+git stash drop stash@{id} 
+ 
+# 删除最近一次的 stash
+git stash drop
+ 
+# 删除所有的 stash
+git stash clear
+
+说明： 实际开发过程中，经常会遇到多个需求交叉开发的情况。可以用 git stash 堆栈来解决这个问题。当然，如果你对 git stash 掌握不好，也可以创建多个分支来解决。
