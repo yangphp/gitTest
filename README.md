@@ -1,7 +1,7 @@
 # gitTest
 git test 
 
-##一：安装篇
+## 一：安装篇
 
 安装包下载地址：https://gitforwindows.org/
 官网慢，可以用国内的镜像：https://npm.taobao.org/mirrors/git-for-windows/。
@@ -23,7 +23,7 @@ git config --list
 查看全局配置
 git config --global --list
 
-##二：创建版本库
+## 二：创建版本库
 
 创建版本库：
 git init
@@ -40,7 +40,7 @@ git暂存区：
 
 需要提交的文件修改通通放到暂存区，然后，一次性提交暂存区的所有修改
 
-##三： 添加 和提交 文件 
+## 三： 添加 和提交 文件 
 
 添加工作区文件到暂存区
 git add filename  			#添加filename文件到暂存区
@@ -61,7 +61,7 @@ git checkout -- filename
 当执行 git checkout . 或者 git checkout -- <file> 命令时，
 会用暂存区全部或指定的文件替换工作区的文件。这个操作很危险，会清除工作区中未添加到暂存区中的改动。 
 
-##四：删除文件 
+## 四：删除文件 
 
 1、从暂存区删除文件
 git rm t3.txt 
@@ -69,7 +69,7 @@ git rm t3.txt
 2、提交删除到版本库，完成删除操作
 git commit -m '提交删除文件 t3.txt'
 
-##五、内容恢复
+## 五、内容恢复
 
 1、恢复工作区的修改(未提交到暂存区的文件)
 git checkout -- filename  
@@ -94,7 +94,7 @@ git reset --hard HEAD~100
 恢复到某个版本
 git reset --hard 473fb15dcda 
 
-##六、相关查看命令
+## 六、相关查看命令
 
 查看当前版本库的状态，显示有变更的文件
 git status 
