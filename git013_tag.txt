@@ -1,0 +1,30 @@
+
+在Git中打标签非常简单，首先，切换到需要打标签的分支上：
+
+打一个新标签
+git tag v1.0
+
+查看标签
+git tag 
+
+根据提交号打标签
+git tag v0.9 f52c633
+
+
+创建带有说明的标签，用-a指定标签名，-m指定说明文字
+git tag -a v0.1 -m "version 0.1 released" 1094adb
+
+删除标签
+git tag -d v0.1
+
+推送标签到远程
+git push origin v1.0
+
+推送全部尚未推送到远程的本地标签
+git push origin --tags
+
+
+删除远程标签
+git tag -d v0.9  #删除本地标签
+git push origin :refs/tags/v0.9 #删除远程标签
+
